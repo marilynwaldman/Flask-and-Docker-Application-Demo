@@ -3,8 +3,8 @@ Jinja2==3.0.1
 requests==2.26.0
 urllib3==1.26.6
 Werkzeug==2.0.1
-pathlib
-jsonify
-folium
-branca
-geopandas
+pathlib==3.10.1
+jsonify==0.5
+folium==0.12.1
+branca==0.4.2
+geopandas==0.10.2
