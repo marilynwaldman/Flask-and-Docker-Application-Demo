@@ -7,8 +7,8 @@ import shutil
 from pathlib import Path
 import geopandas as gpd
 import folium as fl
-from folium.plugins import FastMarkerCluster,MarkerCluster,MiniMap
-import branca.colormap as cm
+#from folium.plugins import FastMarkerCluster,MarkerCluster,MiniMap
+#import branca.colormap as cm
 
 app = Flask(__name__)
 
