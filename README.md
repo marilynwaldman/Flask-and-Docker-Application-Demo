@@ -86,7 +86,7 @@ CMD [ "python", "app.py" ]
 sudo docker exec -it 6080f81b9cca  /bin/bash
 ```bash
 docker run --rm --name conda01 -v /$(pwd):/app/data -v /$(pwd)/greetings.txt:/app/data/greetings.txt jjpan/geopandastest
->>>docker run -p 5000:5000 -t -i -v /$(pwd):/src demo  
+>>>docker run -p 8000:8000 -t -i -v /$(pwd):/src demo  
 ```
 
 Now in your local browser visit:   **http://0.0.0.0:5000/students** 
