@@ -5,7 +5,7 @@ import os as os
 import urllib3
 import shutil
 from pathlib import Path
-#import geopandas as gpd
+import geopandas as gpd
 
 app = Flask(__name__)
 
