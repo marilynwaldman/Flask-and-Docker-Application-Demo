@@ -1,5 +1,6 @@
 import requests
 from flask import Flask, jsonify
+import time
 import tarfile
 import os as os
 import urllib3
@@ -37,6 +38,7 @@ def get_json_data():
                 f.write(chunk)
 
          resp.release_conn()  
+         time.sleep(2)
          wxdata = tarfile.open(name=destination)
          wxdata.list(verbose=True)
          wxdata.extractall(path=str(dest_path)+'/current_all/')
