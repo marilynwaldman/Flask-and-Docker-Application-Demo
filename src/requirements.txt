@@ -6,3 +6,5 @@ Werkzeug==2.0.1
 pathlib
 jsonify
 geopandas
+folium
+branca
