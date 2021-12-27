@@ -1,0 +1,17 @@
+FROM continuumio/miniconda3
+
+RUN /opt/conda/bin/conda config --add channels conda-forge && /opt/conda/bin/conda update -y conda \
+    && /opt/conda/bin/conda install -y  \ 
+     Jinja2   \
+     requests \
+     urllib3  \
+     Werkzeug  
+
+COPY . /src
+
+WORKDIR src
+
+EXPOSE 5000:5000
+
+
+CMD [ "python", "app.py" ]
