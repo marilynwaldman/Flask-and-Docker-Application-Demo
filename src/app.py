@@ -6,7 +6,7 @@ import urllib3
 import shutil
 from pathlib import Path
 import geopandas as gpd
-#import folium as fl
+import folium as fl
 #from folium.plugins import FastMarkerCluster,MarkerCluster,MiniMap
 #import branca.colormap as cm
 
@@ -44,7 +44,7 @@ def get_json_data():
          if os.path.exists(infile):
               weather_df = gpd.read_file(infile)    
               weather_df = weather_df.drop(columns=['PHENOM','SIG','WFO','EVENT','ONSET','ENDS','CAP_ID','MSG_TYPE','VTEC'])  
-         #mbr = fl.Map(location=[40.0,-95.0],zoom_start=4,tiles="Stamen Toner")
+              mbr = fl.Map(location=[40.0,-95.0],zoom_start=4,tiles="Stamen Toner")
 
          #colormap = cm.linear.Set1_09.scale(0,10)
          return infile

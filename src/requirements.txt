@@ -5,4 +5,5 @@ urllib3==1.26.6
 Werkzeug==2.0.1
 pathlib
 jsonify
+folium
 geopandas
