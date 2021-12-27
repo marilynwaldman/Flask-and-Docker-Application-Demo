@@ -41,7 +41,7 @@ def get_json_data():
          wxdata.list(verbose=True)
          wxdata.extractall(path=str(dest_path)+'/current_all/')
          infile = str(dest_path) + '/current_all/current_all.shp'
-         weather_df = gpd.read_file("./current_all/current_all.shp")    
+         weather_df = gpd.read_file(infile)    
          weather_df = weather_df.drop(columns=['PHENOM','SIG','WFO','EVENT','ONSET','ENDS','CAP_ID','MSG_TYPE','VTEC'])  
          #mbr = fl.Map(location=[40.0,-95.0],zoom_start=4,tiles="Stamen Toner")
 
