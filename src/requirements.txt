@@ -6,4 +6,5 @@ Werkzeug==2.0.1
 pathlib
 jsonify
 folium
+branca
 geopandas
